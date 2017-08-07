@@ -1,0 +1,10 @@
+[
+    {
+        "taskId": 1,
+        "language": "Angular 2",
+        "hours": 2,
+        "releaseDate": "March 19, 2016",
+        "taskDescription": "Started creating this task scheduler",
+        "date": "August 6, 2017 8:50:00"
+    }
+]

@@ -3,6 +3,6 @@ export interface ITask {
     taskId: number;
     language: string;
     hours: number;
-    description: string;
+    taskDescription: string;
     date: number;
 }
