@@ -11,6 +11,8 @@ import { ITask } from './task';
 export class TaskListComponent implements OnInit {
 
     pageTitle: string = 'Programming Task List';
+    imageWidth: number = 30;
+    imageMargin: number = 0;
     tasks: ITask[] = [
         {
             'taskId': 1,

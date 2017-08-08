@@ -24,7 +24,12 @@
       </thead>
       <tbody>
         <tr *ngFor='let task of tasks'>
-          <td><img [src]='task.imageUrl'></td>
+          <td>
+            <img [src]='task.imageUrl'
+                [title]='task.language'
+                [style.width.px]='imageWidth'
+                [style.margin.px]='imageMargin'>
+          </td>
           <td>{{ task.language }}</td>
           <td>{{ task.hours | number:'.1-5'}}</td>
           <td>{{ task.taskDescription }}</td>
