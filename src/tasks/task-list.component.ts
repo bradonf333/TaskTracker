@@ -3,12 +3,12 @@ import { ITask } from './task';
 
 @Component({
     moduleId: module.id,
-    selector: 'selector',
-    // templateUrl: './name.component.html',
+    templateUrl: './task-list.component.html',
     // styleUrls: ['./name.component.css']
 })
 export class TaskListComponent implements OnInit {
 
+    pageTitle: string = 'Task List';
     tasks: ITask[] = [
         {
             'taskId': 1,
