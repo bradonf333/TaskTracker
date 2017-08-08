@@ -18,7 +18,7 @@ export class TaskListComponent implements OnInit {
             'hours': 2,
             'taskDescription': 'Started creating this task scheduler',
             'date': 'August 6, 2017 8:50 PM',
-            'imageUrl': '../images/AngularJS-Shield'
+            'imageUrl': './app/images/AngularJS-Shield.png'
         },
         {
             'taskId': 2,
@@ -26,7 +26,7 @@ export class TaskListComponent implements OnInit {
             'hours': 2,
             'taskDescription': 'Created another task.',
             'date': 'August 6, 2017 8:50 PM',
-            'imageUrl': '../images/AngularJS-Shield'
+            'imageUrl': './app/images/AngularJS-Shield.png'
         },
         {
             'taskId': 3,
@@ -34,7 +34,7 @@ export class TaskListComponent implements OnInit {
             'hours': 1.5,
             'taskDescription': 'Got the main stuff working for the tasks',
             'date': 'August 7, 2017 8:41 PM',
-            'imageUrl': '../images/AngularJS-Shield'
+            'imageUrl': './app/images/AngularJS-Shield.png'
         }
     ];
 

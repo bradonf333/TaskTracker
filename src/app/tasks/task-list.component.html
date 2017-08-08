@@ -10,25 +10,27 @@
     <table class='table' *ngIf='tasks && tasks.length'>
       <thead>
         <tr>
-         <!-- 
+          <!-- 
              <th>
             <button class='btn btn-primary' (click)='toggleImage()'>{{showImage ? 'Hide' : 'Show'}} Image</button>
           </th>
         -->
+          <th>Image</th>
           <th>Language</th>
           <th>Hours</th>
           <th>Task Description</th>
           <th>Task Date</th>
         </tr>
       </thead>
-    <tbody>
+      <tbody>
         <tr *ngFor='let task of tasks'>
-            <td>{{ task.language }}</td>
-            <td>{{ task.hours | number:'.1-5'}}</td>
-            <td>{{ task.taskDescription }}</td>
-            <td>{{ task.date | date:'medium' }}</td>
+          <td><img [src]='task.imageUrl'></td>
+          <td>{{ task.language }}</td>
+          <td>{{ task.hours | number:'.1-5'}}</td>
+          <td>{{ task.taskDescription }}</td>
+          <td>{{ task.date | date:'medium' }}</td>
         </tr>
-    </tbody>
+      </tbody>
     </table>
   </div>
 
