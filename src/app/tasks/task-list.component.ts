@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ITask } from './task';
 
+
 @Component({
     moduleId: module.id,
     selector: 'task-list',
@@ -26,6 +27,7 @@ export class TaskListComponent implements OnInit {
             // 'date': "August 6, 2017 8:50:00"
         }
     ];
+
     ngOnInit(): void {
 
     }
