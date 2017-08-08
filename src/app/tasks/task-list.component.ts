@@ -17,21 +17,24 @@ export class TaskListComponent implements OnInit {
             'language': 'Angular 2',
             'hours': 2,
             'taskDescription': 'Started creating this task scheduler',
-            'date': 'August 6, 2017 8:50 PM'
+            'date': 'August 6, 2017 8:50 PM',
+            'imageUrl': '../images/AngularJS-Shield'
         },
         {
             'taskId': 2,
             'language': 'Angular 2',
             'hours': 2,
             'taskDescription': 'Created another task.',
-            'date': 'August 6, 2017 8:50 PM'
+            'date': 'August 6, 2017 8:50 PM',
+            'imageUrl': '../images/AngularJS-Shield'
         },
         {
             'taskId': 3,
             'language': 'Angular 2',
             'hours': 1.5,
             'taskDescription': 'Got the main stuff working for the tasks',
-            'date': 'August 7, 2017 8:41 PM'
+            'date': 'August 7, 2017 8:41 PM',
+            'imageUrl': '../images/AngularJS-Shield'
         }
     ];
 

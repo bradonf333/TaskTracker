@@ -5,4 +5,5 @@ export interface ITask {
     hours: number;
     taskDescription: string;
     date: string;
+    imageUrl: string;
 }
