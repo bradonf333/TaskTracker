@@ -3,6 +3,7 @@ import { ITask } from './task';
 
 @Component({
     moduleId: module.id,
+    selector: 'task-list',
     templateUrl: './task-list.component.html',
     // styleUrls: ['./name.component.css']
 })
