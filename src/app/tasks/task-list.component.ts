@@ -17,14 +17,14 @@ export class TaskListComponent implements OnInit {
             'language': 'Angular 2',
             'hours': 2,
             'taskDescription': 'Started creating this task scheduler',
-            // 'date': "August 6, 2017 8:50:00"
+            'date': 'August 6, 2017 8:50:00'
         },
         {
             'taskId': 2,
             'language': 'Angular 2',
             'hours': 2,
             'taskDescription': 'Created another task.',
-            // 'date': "August 6, 2017 8:50:00"
+            'date': 'August 6, 2017 8:50:00'
         }
     ];
 

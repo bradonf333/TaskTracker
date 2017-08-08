@@ -4,5 +4,5 @@ export interface ITask {
     language: string;
     hours: number;
     taskDescription: string;
-    // date: Date;
+    date: string;
 }
