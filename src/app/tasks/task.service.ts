@@ -10,7 +10,7 @@ import 'rxjs/add/operator/map';
 export class TaskService {
 
     // Represents a web api url that would have access to the list of tasks
-    private _taskUrl = './app/api/tasks.json';
+    private _taskUrl = './api/tasks/tasks.json';
 
     /**
      * Constructor to inject the Http Service from Angular
