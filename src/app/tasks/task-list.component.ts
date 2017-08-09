@@ -25,13 +25,18 @@ export class TaskListComponent implements OnInit {
 
         /** Calls the service to return a list of products */
         this._taskService.getTasks()
-            .subscribe(tasks => this.tasks = tasks,
+            .subscribe(tasks => {
+                    this.tasks = tasks;
+                    this.tasks.forEach(element => {
+                        this.setImageUrl(element);
+                    });
+                },
             error => this.errorMessage = <any>error);
 
         // For each task in the task list, call the setImage method
-        this.tasks.forEach(element => {
-            this.setImageUrl(element);
-        });
+        // this.tasks.forEach(element => {
+        //     this.setImageUrl(element);
+        // });
 
     }
 
