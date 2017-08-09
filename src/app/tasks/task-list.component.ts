@@ -17,7 +17,7 @@ export class TaskListComponent implements OnInit {
     tasks: ITask[] = [
         {
             'taskId': 1,
-            'language': 'C#',
+            'language': 'Angular 2',
             'hours': 2,
             'taskDescription': 'Started creating this task scheduler',
             'date': 'August 6, 2017 8:50 PM',
@@ -30,7 +30,8 @@ export class TaskListComponent implements OnInit {
             'hours': 2,
             'taskDescription': 'Created another task.',
             'date': 'August 6, 2017 8:50 PM',
-            'imageUrl': './app/images/AngularJS-Shield.png'
+            // 'imageUrl': './app/images/AngularJS-Shield.png'
+            'imageUrl': ''
         },
         {
             'taskId': 3,
@@ -38,11 +39,17 @@ export class TaskListComponent implements OnInit {
             'hours': 2.5,
             'taskDescription': 'Got the main stuff working for the tasks',
             'date': 'August 7, 2017 8:41 PM',
-            'imageUrl': './app/images/AngularJS-Shield.png'
+            // 'imageUrl': './app/images/AngularJS-Shield.png'
+            'imageUrl': ''
         }
     ];
 
     ngOnInit(): void {
+
+        // For each task in the task list, call the setImage method
+        this.tasks.forEach(element => {
+            this.setImageUrl(element);
+        });
 
     }
 
