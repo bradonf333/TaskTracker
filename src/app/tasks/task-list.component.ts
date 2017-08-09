@@ -13,14 +13,16 @@ export class TaskListComponent implements OnInit {
     pageTitle: string = 'Programming Task List';
     imageWidth: number = 30;
     imageMargin: number = 0;
+    imageUrl: string;
     tasks: ITask[] = [
         {
             'taskId': 1,
-            'language': 'Angular 2',
+            'language': 'C#',
             'hours': 2,
             'taskDescription': 'Started creating this task scheduler',
             'date': 'August 6, 2017 8:50 PM',
-            'imageUrl': './app/images/AngularJS-Shield.png'
+            // 'imageUrl': './app/images/AngularJS-Shield.png'
+            'imageUrl': ''
         },
         {
             'taskId': 2,
@@ -33,7 +35,7 @@ export class TaskListComponent implements OnInit {
         {
             'taskId': 3,
             'language': 'Angular 2',
-            'hours': 1.5,
+            'hours': 2.5,
             'taskDescription': 'Got the main stuff working for the tasks',
             'date': 'August 7, 2017 8:41 PM',
             'imageUrl': './app/images/AngularJS-Shield.png'
@@ -42,5 +44,26 @@ export class TaskListComponent implements OnInit {
 
     ngOnInit(): void {
 
+    }
+
+    /**
+     * Sets the imageUrl of the given task based on the programming language
+     * @param task 
+     */
+    setImageUrl(task: ITask): void {
+
+        switch (task.language) {
+            case 'Angular 2':
+                task.imageUrl = './app/images/AngularJS-Shield.png';
+                break;
+
+            case 'C#':
+                task.imageUrl = './app/images/C_Sharp.png';
+                break;
+
+            default:
+                task.imageUrl = './app/images/questionIcon.png';
+                break;
+        }
     }
 }
