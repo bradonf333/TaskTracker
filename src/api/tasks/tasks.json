@@ -1,16 +1,37 @@
-[
-    {
-        "taskId": 1,
-        "language": "Angular 2",
-        "hours": 2,
-        "taskDescription": "Started creating this task scheduler",
-        "date": "August 6, 2017 8:50:00"
-    }, 
-    {
-        "taskId": 2,
-        "language": "Angular 2",
-        "hours": 2,
-        "taskDescription": "Created another task.",
-        "date": "August 6, 2017 8:50:00"
-    }
+[{
+    "taskId": 0,
+    "language": "C#",
+    "hours": 2,
+    "taskDescription": "Completed the Tribonacci sequence from CodeWars",
+    "date": "August 4, 2017 10:00 AM",
+    // "imageUrl": "./app/images/AngularJS-Shield.png"
+    "imageUrl": ""
+  },
+  {
+    "taskId": 1,
+    "language": "Angular 2",
+    "hours": 2,
+    "taskDescription": "Started creating this task scheduler",
+    "date": "August 6, 2017 8:50 PM",
+    // "imageUrl": "./app/images/AngularJS-Shield.png"
+    "imageUrl": ""
+  },
+  {
+    "taskId": 2,
+    "language": "Angular 2",
+    "hours": 2,
+    "taskDescription": "Created another task.",
+    "date": "August 6, 2017 8:50 PM",
+    // "imageUrl": "./app/images/AngularJS-Shield.png"
+    "imageUrl": ""
+  },
+  {
+    "taskId": 3,
+    "language": "Angular 2",
+    "hours": 2.5,
+    "taskDescription": "Got the main stuff working for the tasks",
+    "date": "August 7, 2017 8:41 PM",
+    // "imageUrl": "./app/images/AngularJS-Shield.png"
+    "imageUrl": ""
+  }
 ]
