@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ITask } from './task';
+import { TaskService } from './task.service';
 
 
 @Component({
@@ -14,46 +15,18 @@ export class TaskListComponent implements OnInit {
     imageWidth: number = 30;
     imageMargin: number = 0;
     imageUrl: string;
-    tasks: ITask[] = [
-        {
-            'taskId': 0,
-            'language': 'C#',
-            'hours': 2,
-            'taskDescription': 'Completed the Tribonacci sequence from CodeWars',
-            'date': 'August 4, 2017 10:00 AM',
-            // 'imageUrl': './app/images/AngularJS-Shield.png'
-            'imageUrl': ''
-        },
-        {
-            'taskId': 1,
-            'language': 'Angular 2',
-            'hours': 2,
-            'taskDescription': 'Started creating this task scheduler',
-            'date': 'August 6, 2017 8:50 PM',
-            // 'imageUrl': './app/images/AngularJS-Shield.png'
-            'imageUrl': ''
-        },
-        {
-            'taskId': 2,
-            'language': 'Angular 2',
-            'hours': 2,
-            'taskDescription': 'Created another task.',
-            'date': 'August 6, 2017 8:50 PM',
-            // 'imageUrl': './app/images/AngularJS-Shield.png'
-            'imageUrl': ''
-        },
-        {
-            'taskId': 3,
-            'language': 'Angular 2',
-            'hours': 2.5,
-            'taskDescription': 'Got the main stuff working for the tasks',
-            'date': 'August 7, 2017 8:41 PM',
-            // 'imageUrl': './app/images/AngularJS-Shield.png'
-            'imageUrl': ''
-        }
-    ];
+    errorMessage: string;
+    tasks: ITask[];
+
+    constructor(private _taskService: TaskService) {
+    }
 
     ngOnInit(): void {
+
+        /** Calls the service to return a list of products */
+        this._taskService.getTasks()
+            .subscribe(tasks => this.tasks = tasks,
+            error => this.errorMessage = <any>error);
 
         // For each task in the task list, call the setImage method
         this.tasks.forEach(element => {

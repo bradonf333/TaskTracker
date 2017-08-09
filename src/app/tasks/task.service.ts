@@ -7,10 +7,10 @@ import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class TaskName {
+export class TaskService {
 
     // Represents a web api url that would have access to the list of tasks
-    private _taskUrl = './api/tasks/tasks.json';
+    private _taskUrl = './app/api/tasks.json';
 
     /**
      * Constructor to inject the Http Service from Angular
@@ -22,7 +22,7 @@ export class TaskName {
      * Returns a list of ITask by sending an http request to the 
      * given url and casting the json response into an ITask[]
      */
-    getProducts(): Observable<ITask[]> {
+    getTasks(): Observable<ITask[]> {
         return this._http.get(this._taskUrl)
             .map((response: Response) => <ITask[]>response.json())
             .do(data => console.log('All: ' + JSON.stringify(data)))
