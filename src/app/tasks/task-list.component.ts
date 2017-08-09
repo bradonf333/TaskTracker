@@ -6,7 +6,7 @@ import { ITask } from './task';
     moduleId: module.id,
     selector: 'task-list',
     templateUrl: 'task-list.component.html',
-    // styleUrls: ['./name.component.css']
+    styleUrls: ['task-list.component.css']
 })
 export class TaskListComponent implements OnInit {
 
