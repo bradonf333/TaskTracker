@@ -4,39 +4,41 @@
   </div>
 
   <div class='panel-body'>
-  </div>
 
-  <div class='table-responsive'>
-    <table class='table' *ngIf='tasks && tasks.length'>
-      <thead>
-        <tr>
-          <!-- 
+    <div class='table-responsive'>
+      <table class='table' *ngIf='tasks && tasks.length'>
+        <thead>
+          <tr>
+            <!-- 
              <th>
             <button class='btn btn-primary' (click)='toggleImage()'>{{showImage ? 'Hide' : 'Show'}} Image</button>
           </th>
         -->
-          <th>Image</th>
-          <th>Language</th>
-          <th>Hours</th>
-          <th>Task Description</th>
-          <th>Task Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor='let task of tasks'>
-          <td>
-            <img [src]='task.imageUrl'
-                [title]='task.language'
-                [style.width.px]='imageWidth'
-                [style.margin.px]='imageMargin'>
-          </td>
-          <td>{{ task.language }}</td>
-          <td>{{ task.hours | number:'.1-5'}}</td>
-          <td>{{ task.taskDescription }}</td>
-          <td>{{ task.date | date:'medium' }}</td>
-        </tr>
-      </tbody>
-    </table>
+            <th>Image</th>
+            <th>Language</th>
+            <th>Hours</th>
+            <th>Task Description</th>
+            <th>Task Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let task of tasks'>
+            <td>
+              <img [src]='task.imageUrl' [title]='task.language' [style.width.px]='imageWidth' [style.margin.px]='imageMargin'>
+            </td>
+            <td>{{ task.language }}</td>
+            <td>{{ task.hours | number:'.1-5'}}</td>
+            <td>{{ task.taskDescription }}</td>
+            <td>{{ task.date | date:'medium' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
+
+  <div class='panel-footer'>
+        <a class='btn btn-primary' (click)='onBack()'>Create New Task</a>
+    </div>
 
 </div>

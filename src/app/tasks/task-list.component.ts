@@ -16,6 +16,15 @@ export class TaskListComponent implements OnInit {
     imageUrl: string;
     tasks: ITask[] = [
         {
+            'taskId': 0,
+            'language': 'C#',
+            'hours': 2,
+            'taskDescription': 'Completed the Tribonacci sequence from CodeWars',
+            'date': 'August 4, 2017 10:00 AM',
+            // 'imageUrl': './app/images/AngularJS-Shield.png'
+            'imageUrl': ''
+        },
+        {
             'taskId': 1,
             'language': 'Angular 2',
             'hours': 2,
