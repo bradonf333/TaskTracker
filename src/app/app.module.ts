@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { TaskFilterPipe } from './tasks/task-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { TaskCreateComponent } from './tasks/task-create.component';
 
 @NgModule({
   imports: [
@@ -14,12 +15,13 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
-      { path: 'tasks', component: TaskListComponent},
-      { path: '', redirectTo: 'tasks', pathMatch: 'full'},
-      { path: '**', redirectTo: 'tasks', pathMatch: 'full'}
+      { path: 'tasks', component: TaskListComponent },
+      { path: 'create', component: TaskCreateComponent },
+      { path: '', redirectTo: 'tasks', pathMatch: 'full' },
+      { path: '**', redirectTo: 'tasks', pathMatch: 'full' }
     ])
   ]
-  , declarations: [AppComponent, TaskListComponent, TaskFilterPipe]
+  , declarations: [AppComponent, TaskListComponent, TaskCreateComponent, TaskFilterPipe]
   , providers: [TaskService]
   , bootstrap: [AppComponent]
 })
