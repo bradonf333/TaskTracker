@@ -60,11 +60,11 @@ export class TaskListComponent implements OnInit {
                 break;
 
             case 'CSS':
-                task.imageUrl = './app/images/css1.png';
+                task.imageUrl = './app/images/css.png';
                 break;
 
             case 'HTML':
-                task.imageUrl = './app/images/html1.png';
+                task.imageUrl = './app/images/html.png';
                 break;
 
             default:
