@@ -26,11 +26,11 @@ export class TaskListComponent implements OnInit {
         /** Calls the service to return a list of products */
         this._taskService.getTasks()
             .subscribe(tasks => {
-                    this.tasks = tasks;
-                    this.tasks.forEach(element => {
-                        this.setImageUrl(element);
-                    });
-                },
+                this.tasks = tasks;
+                this.tasks.forEach(element => {
+                    this.setImageUrl(element);
+                });
+            },
             error => this.errorMessage = <any>error);
 
         // For each task in the task list, call the setImage method
@@ -53,6 +53,10 @@ export class TaskListComponent implements OnInit {
 
             case 'C#':
                 task.imageUrl = './app/images/C_Sharp.png';
+                break;
+
+            case 'JavaScript':
+                task.imageUrl = './app/images/javascript.png'
                 break;
 
             default:
