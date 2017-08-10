@@ -12,8 +12,8 @@ import { TaskService } from './task.service';
 export class TaskListComponent implements OnInit {
 
     pageTitle: string = 'Programming Task List';
-    imageWidth: number = 30;
-    imageMargin: number = 0;
+    imageWidth: number = 35;
+    imageMargin: number = 2;
     imageUrl: string;
     errorMessage: string;
     tasks: ITask[];
@@ -48,15 +48,23 @@ export class TaskListComponent implements OnInit {
 
         switch (task.language) {
             case 'Angular 2':
-                task.imageUrl = './app/images/AngularJS-Shield.png';
+                task.imageUrl = './app/images/angular.png';
                 break;
 
             case 'C#':
-                task.imageUrl = './app/images/C_Sharp.png';
+                task.imageUrl = './app/images/c_sharp.png';
                 break;
 
             case 'JavaScript':
-                task.imageUrl = './app/images/javascript.png'
+                task.imageUrl = './app/images/javascript.png';
+                break;
+
+            case 'CSS':
+                task.imageUrl = './app/images/css1.png';
+                break;
+
+            case 'HTML':
+                task.imageUrl = './app/images/html1.png';
                 break;
 
             default:
