@@ -5,9 +5,10 @@ import { TaskListComponent } from './tasks/task-list.component';
 import { TaskService } from './tasks/task.service';
 import { HttpModule } from '@angular/http';
 import { TaskFilterPipe } from './tasks/task-filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  imports: [BrowserModule, HttpModule ]
+  imports: [BrowserModule, FormsModule, HttpModule ]
   , declarations: [AppComponent, TaskListComponent, TaskFilterPipe]
   , providers: [TaskService]
   , bootstrap: [AppComponent]

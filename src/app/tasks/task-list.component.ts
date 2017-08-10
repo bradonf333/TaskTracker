@@ -15,6 +15,7 @@ export class TaskListComponent implements OnInit {
     imageWidth: number = 35;
     imageMargin: number = 2;
     imageUrl: string;
+    listFilter: string;
     errorMessage: string;
     tasks: ITask[];
 
