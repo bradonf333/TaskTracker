@@ -4,7 +4,9 @@ import { ITask } from './task';
 /**
  * Custom pipe used to filter an array of Tasks by the Task Name
  */
-@Pipe({name: 'taskFilter'})
+@Pipe({
+    name: 'taskFilter'
+})
 export class TaskFilterPipe implements PipeTransform {
 
     transform(value: ITask[], filterBy: string): ITask[] {
