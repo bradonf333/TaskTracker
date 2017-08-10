@@ -9,15 +9,14 @@ import { Component } from '@angular/core';
                 <a class='navbar-brand'>{{name}}</a>
                 <ul class='nav navbar-nav'>
                     <!--<li><a [routerLink]="['/welcome']">Home</a></li>-->
-                    <!--<li><a [routerLink]="['/products']">Product List</a></li>-->
+                    <li><a [routerLink]="['/tasks']">Task List</a></li>
                 </ul>
             </div>
         </nav>
         <div class ='container'>
-        <task-list></task-list>
-            <!--<router-outlet></router-outlet>-->
+            <router-outlet></router-outlet>
         </div>
     </div>
   ` ,
 })
-export class AppComponent { name = 'Angular'; }
+export class AppComponent { name = 'Task Manager'; }

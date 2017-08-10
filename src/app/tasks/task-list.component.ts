@@ -5,7 +5,6 @@ import { TaskService } from './task.service';
 
 @Component({
     moduleId: module.id,
-    selector: 'task-list',
     templateUrl: 'task-list.component.html',
     styleUrls: ['task-list.component.css']
 })
