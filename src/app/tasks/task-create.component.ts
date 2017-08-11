@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class TaskCreateComponent implements OnInit {
 
+    languages: string[];
+
     pageTitle: string = 'Create a new Task';
 
     constructor(private _router: Router) { }
