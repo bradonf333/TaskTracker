@@ -46,5 +46,13 @@
     "taskDescription": "Completed half of module 14 in PluralSight Angular 2 course. Also worked on my task scheduler app.",
     "date": "August 9, 2017 9:00 PM",
     "imageUrl": ""
+  },
+  {
+    "taskId": 6,
+    "language": "Angular 2",
+    "hours": 1.5,
+    "taskDescription": "Worked on task scheduler app. Created a service to get programming languages from json file.",
+    "date": "August 10, 2017 9:45 PM",
+    "imageUrl": ""
   }
 ]
