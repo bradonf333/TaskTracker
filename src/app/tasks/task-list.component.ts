@@ -23,7 +23,7 @@ export class TaskListComponent implements OnInit {
 
     ngOnInit(): void {
 
-        /** Calls the service to return a list of products */
+        /** Calls the service to return a list of tasks */
         this._taskService.getTasks()
             .subscribe(tasks => {
                 this.tasks = tasks;
