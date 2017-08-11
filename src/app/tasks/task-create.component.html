@@ -12,11 +12,7 @@
         <label for='language' class='col-sm-2 control-label'>Language</label>
         <div class='col-sm-3'>
           <select class='form-control' id='language'>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
+          <option *ngFor='let lang of languages'>{{ lang }}</option>
         </select>
         </div>
       </div>
